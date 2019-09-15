@@ -1,0 +1,59 @@
+*{margin: 0px;
+    padding: 0px;}
+
+.noidung .card .card-header.mauxanh {
+    background: #5d88eb;
+}
+
+.card-body, .card-body .picture {
+    width: 100%;
+    height: 100%;
+}
+
+.card-body .picture {
+    display: flex;
+}
+
+.card-body .picture a img {
+    width: 100%;
+    height: 100%;
+}
+
+.noidung .card {
+    width: 40%;
+    height: auto;
+    margin: 0 auto;
+    position: relative;
+}
+
+.noidung .card h5 a:before {
+    top: 5px;
+    position: absolute;
+    content: "\f107";
+    font-family: "FontAwesome";
+    color: #000000;
+    font-size: 31px;
+    right: 42px;
+    transition: 0.5s;
+}
+
+.noidung .card h5 a {
+    text-decoration: none;
+    text-transform: capitalize;
+    color: black;
+}
+
+.noidung .card h5 a.title_noidung:before {
+    transform: rotate(180deg);
+}
+    
+.noidung {
+    width: 100%;
+    height: 100%;
+}
+
+.noidung h2.title {
+    font-weight: 200;
+    text-align: center;
+    margin: 10px 0;
+}
