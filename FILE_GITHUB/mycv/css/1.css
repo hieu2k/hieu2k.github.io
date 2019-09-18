@@ -4,6 +4,37 @@
     font-family: 'Lato', sans-serif;
 }
 
+.comment {
+    width: 100%;
+    border-top: 1px solid;
+    margin-top: 50px;
+}
+
+.comment .content_comment {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    padding: 30px 0px;
+    /* justify-content: center; */
+    /* align-items: center; */
+    /* justify-items: center; */
+}
+
+.comment .sp_TME_gPvfJdR.sx_52f87e {
+    display: none!important;
+}
+
+.comment .title {
+    width: 100%;
+    text-align: center;
+    padding-top: 50px;
+    text-transform: uppercase;
+    color: #2ecb71;
+    font-size: 29px;
+    font-weight: 800;
+    margin-left: 40px;
+}
+
 .prevous.slick-arrow {
     width: 40px;
     height: 40px;
@@ -24,6 +55,7 @@
     position: relative;
     left: 50%;
     display: inline-block;
+    transform: translateX(-50%);
 }
 
 .next.slick-arrow:before {
