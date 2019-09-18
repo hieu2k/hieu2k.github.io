@@ -22,6 +22,11 @@ $(document).ready(function () {
       $('body').animate({scrollTop:$('.content_3').offset().top},400);
       $('html').animate({scrollTop:$('.content_3').offset().top},400);     
     });
+    $('ul li.nav-item:nth-child(7) a.nav-link').click(function (e) { 
+      e.preventDefault();
+      $('body').animate({scrollTop:$('.comment').offset().top},400);
+      $('html').animate({scrollTop:$('.comment').offset().top},400);     
+    });
   //------End phan cuon chuot do-------------------------------------
 
 
