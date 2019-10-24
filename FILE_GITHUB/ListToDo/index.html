@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ToDoList</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.js"
+      integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+      crossorigin="anonymous">
+    </script>
+    <!doctype html>
+    <html lang="en">
+      <head>
+        <title>Title</title>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+      </head>
+      <body>
+          
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+      </body>
+    </html>
+</head>
+<body>
+  <div class="header">
+    <div class="parents">
+      <div class="container">
+        <div class="row">
+          <div class="col-2">
+            <div class="logo">
+              <img src="./images/logoListTODO.png" alt="">
+            </div>
+          </div>
+          <!-- end col-2 -->
+          <div class="col-6">
+            
+          </div>
+          <div class="col-4">
+            <div class="items">
+              <div class="buttonAddWorkParent">
+                <div class="buttonAddWorkChild"></div>
+                <div class="bg"></div>
+                <div class="form_add">
+                  <h3 class="title">Quick add task</h3>
+                    <input type="text" class="Write-work" name="" id="Write-work" >
+                    <span data-placeholder="Write your work will be done"></span>
+                    <button class="btn btn-info button-add"><p>ADD</p></button>
+                    <div class="btn date-time"><span>Schedule</span></div>
+                </div>
+              </div>
+              <div class="setting"></div>
+              <div class="barMenu"></div>
+            </div>
+          </div>
+          <!-- end col-4 -->
+        </div>
+        
+        <!-- end logo -->
+
+        <!-- end item -->
+      </div>
+      <!-- end container   -->
+    </div>
+  </div>
+  <!-- end header -->
+  <div class="main">
+    <div class="topMain">
+      <div class="contentLeft">
+        <div class="wrapper">
+          <div class="btnClose"></div>
+          <div class="buttonToday">
+            <p class="ToDayWork">Today</p>
+          </div>
+          <div class="buttonNextDay">
+            <p class="NextDayWork">Next 7 days</p>
+          </div>
+          <div class="buttonAddProject">
+            <p class="addProject">Projects</p>
+            <div class="Projects">
+              <div class="_1project">
+                <p class="nameProject">Vũ Thanh Hiếu</p>
+              </div>
+              <div class="_1project">
+                <p class="nameProject">Vũ Thanh Hiếu</p>
+              </div>
+              <div class="_1project">
+                <p class="nameProject">Vũ Thanh Hiếu</p>
+              </div>
+              <div class="_1project">
+                <p class="nameProject">Vũ Thanh Hiếu</p>
+              </div>
+              <div class="writeProject">
+                <p class="buttonAdd">Add Project</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="contentCenter">
+        <div class="listToDo">
+            <div class="title">
+                <h2>ToDoList</h2>
+            </div>
+            <div class="addWork">
+                <input type="text" class="Write-work" name="" id="Write-work" >
+                <span data-placeholder="Write your work will be done"></span>
+                <button class="btn btn-info button-add"><p>ADD</p></button>
+            </div>
+            <div class="list_work">
+                <!-- <div class="_1work">
+                    <input type="checkbox" name="" id="">
+                    <p class="name_work">Make a website</p>
+                </div>-->
+            </div>
+            <!-- ens list-work -->
+            <div class="fooder">
+                <!-- <p class="all_Work">All my work is - <span>4</span></p>
+                <div class="finsh_Work">
+                    <input type="checkbox" name="" id="">
+                    <button class="btn btn-info"><p>Finish my work</p></button>
+                </div> -->
+            </div>
+          </div>
+          <!-- end list toDo -->
+      </div>
+    </div>
+    <!-- end topMain -->
+  </div>
+  <!-- end main -->
+  <div class="fooderEndWeb">
+
+  </div>
+  <!-- end fooder -->
+  
+
+  <script
+    src="https://code.jquery.com/jquery-3.4.1.js"
+    integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+    crossorigin="anonymous">
+  </script>
+  <script src="./js/system.js"></script>
+  <script src="./js/effectBasic.js"></script>
+  <script type="text/javascript">
+		System.defaultJSExtensions = true;
+		System.import('./myjs/listtodo.js');
+	</script>
+
+</body>
+</html>

@@ -1,0 +1,730 @@
+*{
+    padding: 0;
+    margin:0;
+}
+
+.btnClose {
+    width: 40px;
+    height: 40px;
+    position: relative;
+    background: #f0f8ff00;
+    opacity: 0;
+    visibility: hidden;
+    cursor: pointer;
+}
+
+.btnClose:before {
+    content: "\f057";
+    font-family: "FontAwesome";
+    color: rebeccapurple;
+    font-size: 28px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 1040;
+}
+
+.buttonAddProject {
+    width: 100%;
+    position: relative;
+    padding-top: 10px;
+    display: inline-block;
+}
+
+.buttonAddProject .Projects {
+    width: 100%;
+    position: relative;
+    /* max-height: 32px; */
+    /* height: 35px; */
+    display: inline-block;
+    opacity: 0;
+    visibility: hidden;
+    background: aqua;
+    transition: 0.4s;
+    z-index: 1030;
+}
+
+.buttonAddProject .Projects.show {
+    max-height: 100%;
+    opacity: 1;
+    visibility: visible;
+}
+
+.buttonAddProject .Projects ._1project p.nameProject:before {
+    content: ""!important;
+    background: #ffb500!important;
+    width: 10px!important;
+    height: 10px!important;
+}
+
+.buttonAddProject .Projects ._1project {
+    padding-left: 5px;
+}
+
+
+.buttonAddProject .Projects .writeProject p.buttonAdd:before {
+    content: "\f0fe"!important;
+}
+
+.buttonAddProject .Projects .writeProject p.buttonAdd:hover:before {
+    color: rebeccapurple;
+}
+
+.buttonAddProject p.addProject,.buttonAddProject .Projects .writeProject p.buttonAdd {
+    width: 100%;
+    height: 38px;
+    display: flex;
+    align-items: center;
+    font-size: 17px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.3s;
+    padding: 0 10px;
+}
+
+.buttonAddProject .Projects .writeProject p.buttonAdd {
+    font-size: 14px;
+}
+
+.buttonAddProject p.addProject {
+    border-bottom: 1px solid #e6e6e6;
+    transition: 0.4s;
+}
+
+.buttonAddProject .Projects .writeProject p.buttonAdd:hover {
+    background: #fefefeab;
+}
+
+.buttonAddProject p.addProject:after {
+    content: "\f054";
+    margin-left: auto;
+    margin-right: 20px;
+    font-family: "FontAwesome";
+    color: white;
+    font-size: 17px;
+    transition: 0.3s;
+}
+
+.buttonAddProject p.addProject:hover:after {
+    transform: rotate(90deg);
+}
+.buttonAddProject p.addProject.show:after {
+    transform: rotate(90deg);
+}
+.buttonAddProject p.addProject:hover {
+    background: #d5d5d58a;
+}
+.buttonAddProject p.addProject.show {
+    background: #d5d5d58a;
+}
+
+.buttonAddProject p.addProject:before, .buttonAddProject .Projects ._1project p.nameProject:before,.buttonAddProject .Projects .writeProject p.buttonAdd:before {
+    font-family: "FontAwesome";
+    content: "\f067";
+    color: white;
+    margin-right: 10px;
+    font-size: 18px;
+    background: #00ffff00;
+    display: flex;
+    width: 22px;
+    height: 22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+.buttonAddProject p.addProject:hover:before {
+    background: rebeccapurple;
+}
+.buttonAddProject p.addProject.show:before {
+    background: rebeccapurple;
+}
+
+.contentLeft, .contentCenter,.contentRight {
+    flex: 0 0 33.33%;
+    max-width: 33.33%;
+}
+
+.contentCenter {
+    max-width: 37.33%!important;
+}
+
+.contentRight {
+    max-width: 29.33%;
+}
+
+.contentLeft .wrapper {
+    width: 54%;
+    margin-left: auto;
+}
+
+.contentLeft .wrapper .buttonToday, .contentLeft .wrapper .buttonNextDay, .buttonAddProject .Projects ._1project,.buttonAddProject .Projects .writeProject {
+    width: 100%;
+    background: #e4e4e4;
+    height: 34px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contentLeft .wrapper .buttonToday p.ToDayWork, .contentLeft .wrapper .buttonNextDay p.NextDayWork,.buttonAddProject .Projects ._1project p.nameProject {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    color: black;
+    font-size: 16px;
+    padding: 0 10px;
+    transition: 0.4s;
+}
+
+.buttonAddProject .Projects ._1project p.nameProject {
+    font-size: 14px;
+    font-weight: 500;
+}
+.contentLeft .wrapper .buttonToday p.ToDayWork:hover, .contentLeft .wrapper .buttonNextDay p.NextDayWork:hover,.buttonAddProject .Projects ._1project:hover{
+    background: white;
+}
+.contentLeft .wrapper .buttonToday p.ToDayWork.show, .contentLeft .wrapper .buttonNextDay p.NextDayWork.show,.buttonAddProject .Projects ._1project.show{
+    background: white;
+    font-weight: 600;
+}
+
+.contentLeft .wrapper .buttonToday p.ToDayWork:before,.contentLeft .wrapper .buttonNextDay p.NextDayWork:before {
+    content: "\f274";
+    font-family: "FontAwesome";
+    color: white;
+    font-size: 24px;
+    padding-right: 10px;
+}
+
+.contentLeft .wrapper .buttonToday p.ToDayWork.show:before, .contentLeft .wrapper .buttonNextDay p.NextDayWork.show:before {
+    color: rebeccapurple;
+}
+.contentLeft .wrapper .buttonToday p.ToDayWork:hover:before, .contentLeft .wrapper .buttonNextDay p.NextDayWork:hover:before {
+    color: rebeccapurple;
+}
+
+.contentLeft .wrapper .buttonNextDay p.NextDayWork:before {
+    content: "\f073";
+}
+
+.topMain {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.main {
+    width: 100%;
+    background: #e4e4e4;
+    position: relative;
+    display: inline-block;
+}
+
+.header .parents .items {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+}
+
+.header .parents .items .buttonAddWorkParent, .header .parents .items .setting,.header .parents .items .barMenu {
+    width: 15%;
+    height: 100%;
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    background: #50505000;
+    transition: 0.4s;
+}
+
+.header .parents .items .barMenu {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.header .parents .items .setting:hover {
+    background: #80808057;
+}
+
+.header .parents .items .buttonAddWorkParent .buttonAddWorkChild {
+    width: 100%;
+    height: 100%;
+    background: #00ffff00;
+    transition: 0.4s;
+}
+
+.header .parents .items .buttonAddWorkParent .buttonAddWorkChild:hover {
+    background: #80808059;
+}
+
+.header .parents .items .buttonAddWorkParent .bg {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background: #0000009e;
+    top: 0;
+    left: 0;
+    z-index: 9;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.4s;
+}
+
+.header .parents .items .buttonAddWorkParent .bg.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+.header .parents .items .buttonAddWorkParent .form_add {
+    position: fixed;
+    top: 52px;
+    left: 50%;
+    width: 530px;
+    height: 150px;
+    background: #ffffff;
+    z-index: 10;
+    border-radius: 8px;
+    box-shadow: 0 0 10px;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateX(-50%);
+    transition: 0.4s;
+}
+.header .parents .items .buttonAddWorkParent .form_add.show{
+    opacity: 1;
+    visibility: visible;
+}
+.header .parents .items .buttonAddWorkParent .form_add h3.title {
+    position: absolute;
+    top: 10%;
+    font-size: 18px;
+    left: 1%;
+    transform: translateX(-1%) translateY(-10%);
+    color: rebeccapurple;
+    font-weight: 600;
+}
+
+.header .parents .items .setting:before,.header .parents .items .barMenu:before {
+    content: "\f013";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    font-family: "FontAwesome";
+}
+
+.header .parents .items .barMenu:before {
+    content: "\f0c9";
+}
+
+.header .parents .items .buttonAddWorkChild:before {
+    content: "\f067";
+    font-family: "FontAwesome";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 18px;
+    font-weight: 100;
+    color: #ffffff;
+    transform: translateY(-50%) translateX(-50%);
+}
+
+.header {
+    width: 100%;
+    height: 46px;
+}
+
+.header .parents {
+    background: rebeccapurple;
+    width: 100vw;
+    height: 100%;
+}
+
+.header .parents .container,.header .parents .container .row {
+    height: 100%!important;
+}
+
+.header .parents .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+.header .parents .logo svg {
+    background: #a4ecbf;
+    height: auto;
+}
+body,html{
+    width: 100%;
+    height: 100%;
+    font-family: roboto!important;
+    overflow-x: hidden;
+}
+.listToDo{
+    width: 500px;
+    height: auto;
+    margin: auto;
+    background: rgb(255, 255, 255);
+    display: block;
+    border: 5px solid rgb(250, 250, 250);
+}
+
+.listToDo .title{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgb(255, 255, 255);
+    border:1px solid rgb(214, 214, 214);
+    box-shadow: 0 0 10px rgb(207, 207, 207);
+}
+.listToDo .addWork{
+    padding-top:50px;
+    width: 98%;
+    height: 100px;
+    margin:auto;
+    position: relative;
+}
+
+.listToDo .addWork .button-add {
+    position: absolute;
+    top: 65px;
+    right: 0;
+    width: 68px;
+    height: 35px;
+    background: #663399!important;
+    border: none!important;
+    outline: none!important;
+    border-radius: 0;
+    box-shadow: none!important;
+    transition: 0.4s;
+}
+
+.listToDo .addWork .button-add:hover {
+    box-shadow: 0 0 15px 2px #ad75e6!important;
+}
+input.break {
+    word-wrap: break-word;
+    word-break: break-all;
+    height: 80px;
+}
+
+.listToDo .addWork .button-add p {
+    color: #ffffff;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    font-weight: 800;
+}
+.listToDo .addWork .Write-work,.header .parents .items .buttonAddWorkParent .form_add .Write-work{
+    width: 78%;
+    height: 100%;
+    border:none;
+    box-shadow: none;
+    outline: none;
+    background: #ffffff;
+    border-bottom: 3px solid rebeccapurple;
+    overflow-wrap: break-word;
+    word-break: break-all;
+}
+
+.header .parents .items .buttonAddWorkParent .form_add .Write-work {
+    height: 40px;
+    position: absolute;
+    top: 40%;
+    left: 5%;
+    transform: translate(-5%,-40%);
+    background: white;
+    border-bottom: 3px solid #925dc7;
+    border-top: 3px solid #925dc7;
+    border-left: 3px solid #925dc7;
+}
+
+.header .parents .items .buttonAddWorkParent .form_add .button-add {
+    position: relative;
+    top: 90%;
+    left: 2%!important;
+    transform: translateY(-90%);
+    width: 80px;
+    height: 35px;
+    outline: #e6e6e6!important;
+    border-radius: 0;
+    border: none;
+    box-shadow: 0 0 2px #e6e6e6!important;
+    background: rebeccapurple;
+}
+
+.header .parents .items .buttonAddWorkParent .form_add .date-time {
+    position: absolute;
+    background: white;
+    top: 40%;
+    right: 5px;
+    transform: translateY(-40%);
+    width: 106px;
+    border: none;
+    border-radius: 0;
+    height: 40px;
+    border-bottom: 3px solid #925dc7;
+    border-top: 3px solid #925dc7;
+    border-left: 3px solid #925dc7;
+    border-right: 3px solid #925dc7;
+}
+
+.header .parents .items .buttonAddWorkParent .form_add .date-time:hover {
+    box-shadow: 0 0 5px 2px rebeccapurple;
+    outline: rebeccapurple;
+}
+
+.header .parents .items .buttonAddWorkParent .form_add .date-time span {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rebeccapurple;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.header .parents .items .buttonAddWorkParent .form_add .button-add:hover {
+    outline: #8b69ac!important;
+    box-shadow: 0 0 10px #8b69ac!important;
+}
+
+.header .parents .items .buttonAddWorkParent .form_add .button-add p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    font-size: 17px;
+    font-weight: 600;
+}
+.addWork span {
+    color: rgb(104, 104, 104);
+    font-weight: 700;
+    display: flex;
+}
+.listToDo .addWork span:before{
+    content: attr(data-placeholder);
+    position: absolute;
+    top: 68px;
+    transform: translateY(-63%);
+    left:0;
+    display:block;
+    z-index: 0;
+    transition: 0.4s;
+}
+.listToDo .addWork .focus + span:before{
+    top:56px;
+}
+.listToDo .title h2{
+    font-size: 36px;
+    color: rebeccapurple;
+    font-weight: 600;
+}
+.listToDo .list_work{
+    width: 100%;
+    height: auto;
+    padding-top:20px;
+    padding-bottom:20px;
+}
+.listToDo .list_work ._1work{
+    border:1px solid white;
+    margin-top:10px;
+    padding-top:15px;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.listToDo .list_work ._1work p {
+    font-size: 15px;
+    font-weight: 500;
+}
+.listToDo .list_work ._1work input{
+    display:inline-block;
+    text-align:start;
+}
+
+.listToDo .list_work ._1work input.checkBox {
+    margin-left: 5px;
+    opacity: 0;
+    position: relative;
+    z-index: 2;
+    cursor: pointer;
+}
+
+.listToDo .list_work ._1work .checkmark {
+    position: absolute;
+    width: 17px;
+    height: 17px;
+    top: 22px;
+    left: 5px;
+    display: block;
+    z-index: 1;
+    border-radius: 50%;
+    border: 1px solid #e8e8e8;
+}
+
+.listToDo .list_work ._1work input:checked ~ .checkmark:after {
+    position: absolute;
+    left: 4px;
+    top: 2px;
+    content:"";
+    height: 9px;
+    width: 6px;
+    border: solid #ffffff;
+    border-width: 0 3px 3px 0;
+    transform: rotate(45deg);
+}
+
+.listToDo .list_work ._1work input:checked ~ .checkmark {
+    background: #008eff;
+}
+
+.listToDo .list_work ._1work p.name_work{
+    display:inline-block;
+    text-align:start;
+    font-size: 18px;
+    font-weight: 500;
+    padding-left: 10px;
+    width: auto;
+    height: auto;
+    width: 95%;
+    word-break: break-all;
+    position: absolute;
+    top: 18px;
+}
+
+.listToDo .list_work ._1work p.name_work.decoration {
+    text-decoration: line-through;
+}
+.listToDo .fooder{
+    width: 98%;
+    height: auto;
+    background: rgb(255, 255, 255);
+    box-shadow: 0 0 10px rgb(218, 218, 218);
+    display: flex;
+    margin: auto;
+    margin-top: 20px;
+    border: 1px solid rgb(232, 231, 231);
+}
+.listToDo .fooder p.all_Work{
+    width: 50%;
+    color: rgb(88, 88, 88);
+    font-size: 13px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    margin: auto;
+}
+.listToDo .fooder p.all_Work span{
+    font-size: 20px;
+    font-weight: 700;
+}
+.listToDo .fooder .finsh_Work{
+    display: inline-block;
+    width: 50%;
+    text-align: center;
+    margin: auto;
+}
+
+.listToDo .fooder .finsh_Work .btn {
+    width: 150px;
+    height: 40px;
+    background: rebeccapurple!important;
+    border: none;
+    border-radius: 0;
+    outline: none!important;
+    box-shadow: none!important;
+}
+
+.listToDo .fooder .finsh_Work .btn p {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    font-weight: 500;
+    color: white;
+}
+
+.listToDo .fooder .finsh_Work .btn:hover {
+    box-shadow: 0 0 10px #7948aa!important;
+}
+.listToDo .fooder .finsh_Work input{
+    display: inline;
+}
+
+.listToDo .fooder .finsh_Work p{
+    display: inline-block;
+    color: rgb(68, 68, 68);
+    font-size: 18px;
+    font-weight: 500;
+}
+
+@media(max-width:992px){
+    *{}
+
+.btnClose {
+    opacity: 1!important;
+    visibility: visible!important;
+}
+
+    .contentLeft .wrapper {
+        width: 100%;
+        height: 100%;
+    }
+
+    .contentLeft {
+        position: fixed;
+        top: 0;
+        right: -500px;
+        background: #e4e4e4;
+        z-index: 1030;
+        width: 100%;
+        height: 100%;
+        display: block;
+        transition: 0.4s;
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    .contentLeft.show {
+        right: 0;
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .contentCenter {
+        max-width: 100%!important;
+        display: block;
+        margin: auto;
+    }
+    .header .parents .items .barMenu{
+        opacity:1;
+        visibility:visible;
+    }
+}
+
+@media(max-width:576px){
+    *{}
+
+    .listToDo {
+        width: 375px!important;
+    }
+}
