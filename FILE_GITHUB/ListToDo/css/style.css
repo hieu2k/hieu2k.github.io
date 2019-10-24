@@ -238,6 +238,7 @@
     cursor: pointer;
     background: #50505000;
     transition: 0.4s;
+    margin: 0 5px;
 }
 
 .header .parents .items .barMenu {
@@ -282,7 +283,7 @@
     position: fixed;
     top: 52px;
     left: 50%;
-    width: 530px;
+    width: 500px;
     height: 150px;
     background: #ffffff;
     z-index: 10;
@@ -723,6 +724,10 @@ input.break {
 
 @media(max-width:576px){
     *{}
+
+.header .parents .items .buttonAddWorkParent .form_add {
+    width: 375px;
+}
 
     .listToDo {
         width: 375px!important;
